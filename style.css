@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(152, 158, 167);
+    color:black;
+    font-family: "Itim", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Itim", cursive;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+}
+
+main {
+    text-align: center;
+    max-width: 100%;
+}
+
+img{
+    max-width: 55%;
+}

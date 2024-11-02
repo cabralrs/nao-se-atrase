@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Tente não se atrasar</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>É uma segunda-feira de manhã, e seu alarme começa a apitar de forma incessante como de costume.</p>
+            <button class="btn-proximo" data-proximo="1">Dormir mais cinco minutinhos</button>
+            <button class="btn-proximo" data-proximo="2">Levantar e se arrumar para ir para a escola</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="">
+            <p>Que soninho bom! Espera, você dormiu demais, está atrasado!</p>
+            <button class="btn-proximo" data-proximo="3">Fingir que está doente e faltar aula</button>
+            <button class="btn-proximo" data-proximo="4">Levantar e se arrumar às pressas</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2.png" alt="">
+            <p>Que saco... Você, embora cansado, levantou-se e se arrumou.</p>
+            <button class="btn-proximo" data-proximo="5">Ir tomar um banho gelado</button>
+            <button class="btn-proximo" data-proximo="6">Ir tomar um café</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3.png" alt="">
+            <p>Você então se virou novamente e voltou a dormir, fingindo uma febre. Sua mãe suspeitou mas, como já estava atrasado, deixou passar dessa vez.
+                <h2>FINAL - FEBRIO, PORÉM SOSSEGADO!</h2>
+            </p>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png" alt="">
+            <p>Bora lá! Você se levanta correndo, se arrumando rapidamente. Porém, ainda precisa comer algo!</p>
+            <button class="btn-proximo" data-proximo="7">Tomar um café mesmo assim</button>
+            <button class="btn-proximo" data-proximo="8">Pegar um lanchinho e sair às pressas</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png" alt="">
+            <p>Que gelado, porém refrescante... O banho te revitalizou bem, porém agora está um pouco encima da hora.</p>
+            <button class="btn-proximo" data-proximo="9">Tomar um café mesmo assim</button>
+            <button class="btn-proximo" data-proximo="22">Pegar um lanchinho e ir pro ponto</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6.png" alt="">
+            <p>Hmmm... O café te energizou, porém ainda quer tomar um banho. Talvez dê tempo.</p>
+            <button class="btn-proximo" data-proximo="11">Tomar banho mesmo assim</button>
+            <button class="btn-proximo" data-proximo="10">Ir direto para o ponto</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7.png" alt="">
+            <p>Você tentou tomar um cafézinho antes de sair, mas assim que abriu o portão, o ônibus já havia passado.
+                <h2>FINAL - ATRASADO!</h2>
+            </p>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-passo12.png" alt="">
+            <p>Você pega uma fruta no balcão e corre para pegar seu ônibus a tempo. Por pouco você não consegue, adentrando o veículo no último instante</p>
+            <button class="btn-proximo" data-proximo="22">Próximo</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo6.png" alt="">
+            <p>Você conseguiu tomar um cafézinho, saindo de casa no horário estipulado.</p>
+            <button class="btn-proximo" data-proximo="21">Próximo</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo11.png" alt="">
+            <p>Você chegou cedo no ponto, livre de estresses.</p>
+            <button class="btn-proximo" data-proximo="23">Próximo</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo8.png" alt="">
+            <p>Que refrescante... Porém, você passou tempo demais debaixo do chuveiro e acabou se atrasando. Estava bom demais para ser verdade.</p>
+            <h2>FINAl - ATRASADO!</h2>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-20">
+            <img src="img/cenario-passo11.png" alt="">
+            <p>Você ficou com fome, porém chegou cedo no ponto, pegando o ônibus logo em seguida.</p>
+            <h2>FINAl - COM FoME... PORÉM ADIANTADO!</h2>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-21">
+            <img src="img/cenario-passo9.png" alt="">
+            <p>Você seguiu o melhor caminho possível. Parabéns em sobreviver uma segunda-feira de manhã!</p>
+            <h2>FINAl - PERFEITO!</h2>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-22">
+            <img src="img/cenario-passo13.png" alt="">
+            <p>Você chegou no ponto quase ao mesmo tempo que ônibus, entrando e comendo seu lanche na ida.</p>
+            <h2>FINAl - NO HORÁRIO!</h2>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-23">
+            <img src="img/cenario-passo9.png" alt="">
+            <p>Você chegou cedo no ponto, pegando então o ônibus, porém um pouco desconfortável porque não tomou banho, mas relevou.</p>
+            <h2>FINAl - SEM BANHO... PORÉM ADIANTADO!</h2>
+            <button class="reinicio" onclick="reloadPage()">Reiniciar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
